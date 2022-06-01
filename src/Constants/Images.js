@@ -6,7 +6,7 @@ import sass from '../assets/sass.png';
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
 
-export default {
+const Images = {
     blob,
     profile,
     node,
@@ -15,3 +15,5 @@ export default {
     email,
     mobile
 }
+
+export default Images;
