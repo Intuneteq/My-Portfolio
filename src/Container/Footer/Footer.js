@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 import { Images } from "../../Constants";
 import "./Footer.scss";
@@ -14,7 +13,6 @@ const Footer = () => {
     message: "",
   });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
 
   const { name, email, message } = formData;
 
@@ -25,7 +23,6 @@ const Footer = () => {
   };
 
   const handleSendMessage = () => {
-    setIsLoading(true);
 
     const contact = {
       _type: "contact",
@@ -35,7 +32,6 @@ const Footer = () => {
     };
 
     client.create(contact).then(() => {
-      setIsLoading(false);
       setIsFormSubmitted(true);
     });
   };

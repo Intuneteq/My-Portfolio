@@ -38,7 +38,7 @@ const Header = () => {
 
           <div className="cv-job app__flex">
             <p>
-              <a href="#" className="p-text">
+              <a href="../../assets/CV.pdf" type="download" className="p-text">
                 Download My CV
               </a>
             </p>
