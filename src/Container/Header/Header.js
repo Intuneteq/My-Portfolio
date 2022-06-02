@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import { Images } from "../../Constants";
 import AppWrapper from "../../Wrapper/AppWrapper";
+import CV from "../../assets/CV.pdf";
 import "./Header.scss";
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
 
           <div className="cv-job app__flex">
             <p>
-              <a href="../../assets/CV.pdf" type="download" className="p-text">
+              <a href={ CV } download className="p-text">
                 Download My CV
               </a>
             </p>
