@@ -31,7 +31,7 @@ const Skills = () => {
   return (
     <>
       <h2 className="head-text">
-        Skills <span> & </span>Experience
+        Tech-Stack <span> & </span>Experience
       </h2>
 
       {isLoading ? (
