@@ -17,7 +17,9 @@ const NavigationDots = ({ active }) => {
           key={list + index}
           className="app__navigation-dot"
           style={active === list ? { backgroundColor: "#9EE08F" } : {}}
-        >{""}</a>
+        >
+          {""}
+        </a>
       ))}
     </div>
   );

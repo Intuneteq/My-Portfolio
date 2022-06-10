@@ -39,7 +39,7 @@ const Header = () => {
 
           <div className="cv-job app__flex">
             <p>
-              <a href={ CV } download className="p-text">
+              <a href={CV} download className="p-text">
                 Download My CV
               </a>
             </p>

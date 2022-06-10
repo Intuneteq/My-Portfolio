@@ -40,8 +40,6 @@
   }
 }
 
-
-
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -62,18 +60,18 @@
     transition: all 0.3s ease;
 
     &:hover {
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     }
 
     @media screen and (min-width: 2000px) {
-        width: 470px;
-        padding: 1.25rem;
-        border-radius: 0.75rem;
-      }
+      width: 470px;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+    }
     @media screen and (max-width: 300px) {
-        width: 100%;
-        margin: 1rem;
-      }
+      width: 100%;
+      margin: 1rem;
+    }
   }
 }
 
@@ -97,58 +95,56 @@
 }
 
 .app__work-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all 0.3s, ease;
+
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 
-    border-radius: 0.5rem;
-    opacity: 0;
-    transition: all 0.3s, ease;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
-    div {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-
-        margin: 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        svg {
-            width: 50%;
-            height: 50%;
-            color: var(--white-color);
-        }
+    svg {
+      width: 50%;
+      height: 50%;
+      color: var(--white-color);
     }
+  }
 }
 
-
 .app__work-content {
+  padding: 0.5rem;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+
+  h4 {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  .app__work-tag {
+    position: absolute;
+
     padding: 0.5rem;
-    width: 100%;
-    position: relative;
-    flex-direction: column;
+    border-radius: 10px;
 
-    h4 {
-        margin-top: 1rem;
-        line-height: 1.5;
-    }
-
-    .app__work-tag {
-        position: absolute;
-
-        padding: 0.5rem;
-        border-radius: 10px;
-
-        background-color: #fff;
-        top: -25px;
-
-    }
+    background-color: #fff;
+    top: -25px;
+  }
 }
