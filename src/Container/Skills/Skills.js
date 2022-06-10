@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactTooltip from "react-tooltip";
+import { Rings } from "react-loader-spinner";
 
 import AppWrapper from "../../Wrapper/AppWrapper";
 import { urlFor, client } from "../../client";
@@ -35,7 +36,9 @@ const Skills = () => {
       </h2>
 
       {isLoading ? (
-        <div className="head-text">...Loading</div>
+        <div className="head-text Rings">
+          <Rings color="#9ee08f" height={80} width={80} />
+        </div>
       ) : (
         <div className="app-skills-container">
           <motion.div className="app__skills-list">

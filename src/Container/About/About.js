@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Rings } from "react-loader-spinner";
 
 import AppWrapper from "../../Wrapper/AppWrapper";
 import MotionWrap from "../../Wrapper/MotionWrap";
@@ -28,8 +29,8 @@ const About = () => {
       </h1>
 
       {isLoading ? (
-        <div style={{ marginTop: 20 }} className="head-text">
-          ....Loading
+        <div className="head-text Rings">
+          <Rings color="#9ee08f" height={80} width={80} />
         </div>
       ) : (
         <div className="app__profiles">

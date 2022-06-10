@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { Rings } from "react-loader-spinner";
 
 import AppWrapper from "../../Wrapper/AppWrapper";
 import { urlFor, client } from "../../client";
@@ -42,7 +43,9 @@ const Testimonials = () => {
         Testimonials<span> & </span>Brands
       </h2>
       {isLoading ? (
-        <div className="head-text">...Loading</div>
+        <div className="head-text Rings">
+          <Rings color="#9ee08f" height={80} width={80} />
+        </div>
       ) : (
         <>
           {testimonials.length && (

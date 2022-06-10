@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { Rings } from "react-loader-spinner";
 
 import "./Work.scss";
 import AppWrapper from "../../Wrapper/AppWrapper";
@@ -67,8 +68,8 @@ const Work = () => {
       </div>
 
       {isLoading ? (
-        <div style={{ marginTop: 20 }} className="head-text">
-          ..Loading
+        <div className="head-text Rings">
+          <Rings color="#9ee08f" height={80} width={80} />
         </div>
       ) : (
         <motion.div
