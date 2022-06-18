@@ -44,7 +44,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My <span>Creative</span> Portfolio
+        want to see the <span> websites i have designed?</span> scroll
       </h2>
 
       <div className="app__work-filter">

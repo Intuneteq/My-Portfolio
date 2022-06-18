@@ -119,6 +119,7 @@
 
     transition: all 0.3s ease-in-out;
 
+
     svg {
       width: 15px;
       height: 15px;
@@ -182,9 +183,11 @@
 
 @media screen and (max-width: 500px) {
   .app__navigation,
-  .app__social {
-    display: none;
-  }
+  // .app__social {
+  //   display: none;
+
+    
+  // }
 
   .copyright {
     padding: 2rem;
@@ -196,4 +199,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
+}
+
+.link {
+  color: var(--gray-color);
 }

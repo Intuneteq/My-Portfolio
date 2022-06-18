@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div className="app__abouts">
       <h1 className="head-text">
-        What <span>I Bring </span>To <span>Your</span> Project
+        SERVICES <span>I CAN </span>HELP <span>You</span> WITH
       </h1>
 
       {isLoading ? (

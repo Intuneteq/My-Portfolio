@@ -33,7 +33,7 @@ const Header = () => {
           </div>
 
           <div className="detail-job app__flex">
-            <p className="p-text">JAVASCRIPT FULLSTACK DEVELOPER</p>
+            <p className="p-text">FULLSTACK WEB DEVELOPER</p>
             <p className="p-text">COMPUTER ENGINEER</p>
           </div>
 
@@ -67,7 +67,7 @@ const Header = () => {
         whileInView={scaleVariant.whileInView}
         className="app__header-skills"
       >
-        {[Images.react, Images.node, Images.sass].map((skill, index) => (
+        {[Images.react, Images.javascript, Images.node].map((skill, index) => (
           <div className="skill-cmp app__flex" key={`skill-${index}`}>
             <img src={skill} alt="skill" />
           </div>
