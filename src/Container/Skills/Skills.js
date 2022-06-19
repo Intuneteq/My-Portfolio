@@ -14,7 +14,7 @@ const Skills = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const query = '*[_type == "skills"]';
+    const query = '*[_type == "skills"] | order(number asc)';
     const experiencesQuery = '*[_type == "experiences"]';
 
     client.fetch(query).then((data) => {

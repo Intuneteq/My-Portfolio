@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="app__nav">
       <div className="app__nav-logo">
-        <h1>OLANITORI TOBI</h1>
+        <h1>TOBI OLANITORI</h1>
       </div>
       <ul className="app__nav-list">
         {navLists.map((list) => (

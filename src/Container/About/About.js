@@ -13,7 +13,7 @@ const About = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const query = '*[_type == "abouts"]';
+    const query = '*[_type == "abouts"] | order(number asc)';
 
     client.fetch(query).then((data) => {
       console.log(data);
