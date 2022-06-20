@@ -39,9 +39,11 @@ const Testimonials = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <div className="app__flex">
+      <h2 className="section-text">
         Testimonials<span> & </span>Brands
       </h2>
+      </div>
       {isLoading ? (
         <div className="head-text Rings">
           <Rings color="#9ee08f" height={80} width={80} />

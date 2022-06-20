@@ -53,10 +53,10 @@
 
 .head-text {
   font-size: 2.75rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   color: var(--black-color);
-  text-transform: uppercase;
+  text-transform: capitalize;
 
   span {
     color: var(--secondary-color);
@@ -203,4 +203,15 @@
 
 .link {
   color: var(--gray-color);
+}
+
+.section-text {
+  font-size: 1.75rem;
+  padding: 1rem;
+  width: 100%;
+  font-weight: 300;
+  text-align: center;
+  color: var(--black-color);
+  border: 3px solid #0D0D0D;
+  border-radius: 10px;
 }

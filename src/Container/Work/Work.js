@@ -43,9 +43,11 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">
-        want to see the <span> websites i have designed?</span> scroll
+      <div className="app__flex">
+      <h2 className="section-text">
+        Projects
       </h2>
+      </div>
 
       <div className="app__work-filter">
         {[

@@ -31,9 +31,11 @@ const Skills = () => {
   }, []);
   return (
     <>
-      <h2 className="head-text">
+      <div className="app__flex">
+      <h2 className="section-text">
         Tech Stack <span> & </span>Experience
       </h2>
+      </div>
 
       {isLoading ? (
         <div className="head-text Rings">
@@ -110,6 +112,5 @@ const Skills = () => {
 
 export default AppWrapper(
   MotionWrap(Skills, "app__skills"),
-  "skills",
-  "app__whitebg"
+  "skills"
 );

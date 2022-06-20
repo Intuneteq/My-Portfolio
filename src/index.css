@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Slabo+27px&display=swap");
 
 :root {
-  --font-base: "Nunito", sans-serif;
-  --primary-color: #d0f79c66;
-  --secondary-color: #9ee08f;
+  --font-base: "Quicksand", sans-serif;
+  --font-name: "Slabo";
+  --primary-color: #FCFAFA;
+  --secondary-color: #0D0D0D;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --white-color: #ffff;

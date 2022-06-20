@@ -125,6 +125,13 @@
       color: var(--white-color);
     }
   }
+
+  @media screen and (max-width: 780px) {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
 }
 
 .app__work-content {

@@ -36,6 +36,7 @@ const Navbar = () => {
           <motion.div
             whileInView={{ x: [150, 0] }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+            className="app__nav-body"
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>

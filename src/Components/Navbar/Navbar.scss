@@ -57,6 +57,7 @@
 
     &:hover {
       color: var(--secondary-color);
+      font-weight: 800;
     }
   }
 
@@ -140,4 +141,8 @@
   @media screen and (min-width: 900px) {
     display: none;
   }
+}
+
+.app__nav-body {
+  background-color: var(--primary-color) !important;
 }

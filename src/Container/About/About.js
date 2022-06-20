@@ -23,10 +23,12 @@ const About = () => {
   }, []);
 
   return (
-    <div className="app__abouts">
-      <h1 className="head-text">
-        SERVICES <span>I CAN </span>HELP <span>You</span> WITH
-      </h1>
+    <div>
+      <div className="app__flex">
+        <h2 className="sec">
+          what i've worked on
+        </h2>
+      </div>
 
       {isLoading ? (
         <div className="head-text Rings">
@@ -57,8 +59,4 @@ const About = () => {
   );
 };
 
-export default AppWrapper(
-  MotionWrap(About, "app__abouts"),
-  "about",
-  "app__whitebg"
-);
+export default AppWrapper(MotionWrap(About, "app__abouts"), "about");

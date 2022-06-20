@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { BsTwitter, BsLinkedin } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 
 import { Images } from "../../Constants";
 import "./Footer.scss";
@@ -36,7 +38,11 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Reach out to me, let's discuss your next project</h2>
+      <div className="app__flex">
+        <h2 className="section-text">
+          Reach out to me, let's discuss your next project
+        </h2>
+      </div>
 
       <div className="app__footer-cards">
         <div className="app__footer-card">
@@ -51,6 +57,40 @@ const Footer = () => {
             +2348148809628
           </a>
         </div>
+      </div>
+
+      <div className="mobile-socials app__flex">
+      <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/intunedaplug/"
+          className="link"
+        >
+          <div>
+          <BsTwitter />
+          </div>
+        </a>
+      
+      <div>
+        <a
+          href="http://linkedin.com/in/tobi-olanitori-695884211"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
+          <BsLinkedin />
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://github.com/Intuneteq"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
+          <AiFillGithub />
+        </a>
+      </div>
       </div>
 
       {!isFormSubmitted ? (
@@ -97,8 +137,4 @@ const Footer = () => {
   );
 };
 
-export default AppWrapper(
-  MotionWrap(Footer, "app__footer"),
-  "contact",
-  "app__whitebg"
-);
+export default AppWrapper(MotionWrap(Footer, "app__footer"), "contact");

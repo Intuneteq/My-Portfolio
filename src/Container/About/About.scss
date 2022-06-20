@@ -1,8 +1,12 @@
-.app__abouts {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
-}
+// .app__abouts {
+//   flex: 1;
+//   width: 100%;
+//   flex-direction: column;
+// }
+
+// .head {
+//   width: 100%;
+// }
 
 .app__profiles {
   display: flex;
@@ -44,4 +48,15 @@
   p {
     text-align: justify;
   }
+}
+
+.sec {
+  font-size: 1.75rem;
+  padding: 1rem;
+  // width: 100%;
+  font-weight: 300;
+  text-align: center;
+  color: var(--black-color);
+  border: 3px solid #0D0D0D;
+  border-radius: 10px;
 }

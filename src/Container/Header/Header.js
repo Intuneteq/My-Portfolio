@@ -19,7 +19,8 @@ const Header = () => {
   };
 
   return (
-    <div className="app__header app__flex">
+    <div className="app__header">
+      <div className="app__header-1 app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -27,9 +28,8 @@ const Header = () => {
       >
         <div className="app__header-detail">
           <div className="detail-head app__flex">
-            <span>👋</span>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Tobi Olanitori</h1>
+            <h1 className="head-text">Tobi<br/>Olanitori</h1>
           </div>
 
           <div className="detail-job app__flex">
@@ -53,14 +53,15 @@ const Header = () => {
         className="app__header-img"
       >
         <img src={Images.profile} alt="profile" />
-        <motion.img
+        {/* <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
           src={Images.blob}
           alt="profile_circle"
           className="overlay_circle"
-        />
+        /> */}
       </motion.div>
+      </div>
 
       <motion.div
         variants={scaleVariant}
