@@ -10,11 +10,12 @@ import MotionWrap from "../../Wrapper/MotionWrap";
 
 const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
+  const [isSending, setIsSending] = useState(false);
   const form = useRef();
 
   const submitMessage = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs
       .sendForm(
@@ -29,6 +30,7 @@ const Footer = () => {
         },
         (error) => {
           console.error(error);
+          setIsSending(false);
         }
       );
   };
@@ -122,7 +124,7 @@ const Footer = () => {
           </div>
 
           <button className="p-text" type="submit">
-            Send Message
+            {isSending ? 'Sending..' : 'Send Message'}
           </button>
         </form>
       ) : (

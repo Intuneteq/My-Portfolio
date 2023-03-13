@@ -21,7 +21,7 @@
   
 
   padding: 6rem 2rem 0;
-
+  
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
   }
@@ -185,6 +185,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0;
+    margin-top: 200px;
 
     div {
       margin: 1rem;
