@@ -18,13 +18,11 @@ const Skills = () => {
     const experiencesQuery = '*[_type == "experiences"] | order(year asc)';
 
     client.fetch(query).then((data) => {
-      console.log(data);
       setIsLoading(false);
       setSkills(data);
     });
 
     client.fetch(experiencesQuery).then((data) => {
-      console.log(data);
       setIsLoading(false);
       setExperiences(data);
     });

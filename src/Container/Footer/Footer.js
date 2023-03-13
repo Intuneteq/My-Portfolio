@@ -16,8 +16,6 @@ const Footer = () => {
   const submitMessage = (e) => {
     e.preventDefault();
 
-    console.log("formData", form);
-
     emailjs
       .sendForm(
         "service_xa4foni",
@@ -28,10 +26,9 @@ const Footer = () => {
       .then(
         (result) => {
           setIsFormSubmitted(true);
-          console.log("form", result.text);
         },
         (error) => {
-          console.log(error.text);
+          console.error(error);
         }
       );
   };

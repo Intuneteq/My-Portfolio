@@ -16,7 +16,6 @@ const About = () => {
     const query = '*[_type == "abouts"] | order(number asc)';
 
     client.fetch(query).then((data) => {
-      console.log(data);
       setIsLoading(false);
       setAbouts(data);
     });
@@ -26,7 +25,7 @@ const About = () => {
     <div>
       <div className="app__flex">
         <h2 className="sec">
-          what i've worked on
+          About Me
         </h2>
       </div>
 

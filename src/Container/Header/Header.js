@@ -65,7 +65,7 @@ const Header = () => {
         whileInView={scaleVariant.whileInView}
         className="app__header-skills"
       >
-        {[Images.react, Images.javascript, Images.node].map((skill, index) => (
+        {[Images.javascript, Images.PHP].map((skill, index) => (
           <div className="skill-cmp app__flex" key={`skill-${index}`}>
             <img src={skill} alt="skill" />
           </div>

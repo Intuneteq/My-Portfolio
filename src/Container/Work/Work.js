@@ -19,7 +19,6 @@ const Work = () => {
     const query = '*[_type == "works"]';
 
     client.fetch(query).then((data) => {
-      console.log(data);
       setIsLoading(false);
       setWorks(data);
       setFilterWork(data);
@@ -51,10 +50,10 @@ const Work = () => {
 
       <div className="app__work-filter">
         {[
-          "HTML/CSS/JAVASCRIPT",
-          "REACT JS",
-          "NEXT.JS",
-          "EXPRESS.JS",
+          "REACT/NEXT",
+          "VUE/NUXT",
+          "NODE/EXPRESS",
+          "PHP/LARAVEL",
           "ALL",
         ].map((item, index) => (
           <div

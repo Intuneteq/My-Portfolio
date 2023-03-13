@@ -125,6 +125,7 @@
   align-items: flex-start;
   margin-top: 2rem;
   margin-left: 1rem;
+  // border: 1px solid red;
   
   @media screen and (max-width: 500px) {
     flex-direction: row;
@@ -145,22 +146,23 @@
   }
 
   div:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    // border: 1px solid blue;
   }
   div:nth-child(2) {
-    margin: 1.75rem;
-    width: 150px;
-    height: 150px;
+    // margin: 1.75rem;
+    width: 200px;
+    height: 200px;
 
     img {
       border-radius: 80px;
     }
   }
-  div:nth-child(3) {
-    width: 70px;
-    height: 70px;
-  }
+  // div:nth-child(3) {
+  //   width: 70px;
+  //   height: 70px;
+  // }
 
   @media screen and (min-width: 2000px) {
     margin-top: 3rem;
